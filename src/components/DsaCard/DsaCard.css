@@ -1,0 +1,41 @@
+/* DSA Card */
+.dsa-account-item {
+    margin:2% 4%;
+    padding:2%;
+    background-color:#fff;
+    border-radius: 2%;
+    width: 100%;
+}
+
+/* DSA Address */
+.dsa-address { position: relative; font-size: 20px;}
+.dsa-address span {
+    font-weight: bold;
+    color:#8B88B7;
+}
+
+.dsa-address a {
+    margin-left:12px;
+    text-decoration: none;
+    /* font-weight: bold; */
+    color:#03265B;
+}
+
+#dsa-id-overlay {
+    position: absolute;;
+    top:0px;
+    right:0;
+    background-image: linear-gradient(to right,#067, #047); 
+    color:#fff; 
+    padding:10px;
+}
+
+#explore-dsa-link {
+    outline:none;
+    border: none;
+    color:#fff;
+    font-size: 16px;
+    background-image: linear-gradient(to right,#067, #047); 
+    margin-left:20px;
+    padding:5px;
+}

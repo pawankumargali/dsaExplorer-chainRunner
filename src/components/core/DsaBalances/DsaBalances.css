@@ -1,0 +1,83 @@
+/* Overall Position */
+.pos-div {
+    margin-top:30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.pos-div > div {
+    margin-left:10px;
+    margin-right:10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.pos-div > div > span {
+    padding:2.5px 5px;
+    min-width: 30px;
+    padding:4px 8px;
+}
+
+.pos-div img {
+    width:20px;
+}
+
+.value-item {
+    color:#03265B;
+    font-weight: bold;
+}
+
+
+/* Hidden Balances div */
+
+#hidden-balance-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height:auto;
+}
+#hidden-bal-div { 
+    /* margin-top:30px;
+    margin-bottom: 30px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width:50%; */
+}
+
+#hidden-bal-div > div {
+    padding:10px;
+    margin:10px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 200px;
+}
+
+#hidden-bal-div > div > span {
+    padding:50px 5px;
+    min-width: 30px;
+    padding:4px 8px;
+}
+
+#hidden-bal-div div img {
+    width:32px;
+}
+
+#balance-chart-div {
+    width:30%;
+    min-width:300px;
+   
+}

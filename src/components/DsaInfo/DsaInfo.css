@@ -1,0 +1,254 @@
+/* dsa info container */
+#dsa-info-container {
+    margin:2%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius:5px;
+    border-bottom: solid 1px #8B88B7;
+}
+
+/* dsa address */
+#dsa-address {
+    padding:1%;
+    width:100%;
+    font-size: 20px;
+}
+
+#dsa-address span {
+    font-weight: bold;
+    color:#8B88B7;
+    margin-right:12px;
+}
+
+#dsa-address a {
+    text-decoration: none;
+    color:#03265B;
+
+}
+
+#balances-container {
+    display:flex;
+}
+
+/* dsa positions item */
+/* #dsa-positions-item {
+    margin:2%;
+    padding:2%;
+    background-color:#fff;
+    border-radius: 2%;
+    width: 100%;
+} */
+#dsa-positions-item {
+    margin:2%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius:5px;
+    border-bottom: solid 1px #8B88B7;
+}
+
+#select-positions {
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#select-positions div {
+    cursor: pointer;
+    width:200px;
+    background-color: #F8F9FA;
+    padding:1%;
+    text-align: center;
+    color:#03265B;
+    font-weight: bold;
+}
+
+
+#select-positions div img {
+    width:150px;
+    height:40px;
+}
+
+/* Detailed Position  */
+
+.detailed-pos-wrapper {
+    margin-top:50px;
+    width:100%;
+    background-color: #F8F9FA;
+    position: relative;
+    /* margin-bottom:50px; */
+}
+
+.detailed-pos-header {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    /* position:relative; */
+}
+
+#mkr-vault-div-detailed-pos {
+    position: absolute;
+    font-size: 18px;
+    top:0;
+    right:0;
+    background-image: linear-gradient(to right,#067, #047); 
+    padding:10px;
+}
+
+#mkr-vault-div-detailed-pos span {
+    color:#fff;
+}
+
+#mkr-vault-div-detailed-pos select {
+    font-size:16px;
+    width:60px;
+}
+
+.detailed-pos-div {
+    width:100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.detailed-pos-div > div {
+    margin-left:10px;
+    margin-right:10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.detailed-pos-div > div > span {
+    padding:2.5px 5px;
+    min-width: 30px;
+    padding:4px 8px;
+}
+
+.detailed-pos-div img {
+    width:20px;
+}
+
+.detailed-pos-div progress {
+    width:80px;
+    height:5px;
+    background-color: #fff;
+
+}
+
+
+table {
+    margin-top:50px;
+    margin-bottom: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+    background-color: #F8F9FA;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+
+  }
+
+.detailed-pos-wrapper table { background-color: #fff;}
+  
+  th {
+    font-size: 16px;
+    min-width: 120px;
+    color: #fff;
+    background-color: black;
+    padding: 5px 8px;
+    line-height: 25px;
+  }
+
+  th img {
+      position: relative;
+      width:20px;
+      top:5px;
+      left:5px;
+  }
+
+  tr {
+      border-bottom:solid 2px #000;
+  }
+
+  
+  td {
+    border: solid 2px #fff;
+    font-size: 16px;
+    padding: 5px 8px;
+    line-height: 30px;
+  }
+
+  td img {
+    position: relative;
+    width:20px;
+    top:5px;
+    right:10px;
+  }
+
+
+  #position-chart-div {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+
+  /* Owners info container */
+  #owners-info-div {
+    margin:2%;
+    padding: 2%;
+    background-color: #fff;
+    border-radius:5px;
+    border-bottom: solid 1px #8B88B7;
+    /* font-size: 20px; */
+}
+
+#owners-info-div div {
+    margin-top:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* owner address */
+.owner-address {
+    cursor: pointer;
+    padding:1%;
+    background-color:#F8F9FA;
+    color:#03265B;
+    font-size: 16px;
+}
+
+.owner-address a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.no-pos-div {
+
+    background-color:  #FF3D67;
+    width:30%;
+    padding:1% 2%;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 50px;
+    text-align: center;
+}

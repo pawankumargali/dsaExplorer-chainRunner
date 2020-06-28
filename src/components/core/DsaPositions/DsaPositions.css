@@ -1,0 +1,165 @@
+/* Overall Position */
+.pos-div {
+    margin-top:30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pos-div > div {
+    margin-left:10px;
+    margin-right:10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.pos-div > div > span {
+    padding:2.5px 5px;
+    min-width: 30px;
+    padding:4px 8px;
+}
+
+.pos-div img {
+    width:20px;
+}
+
+.protocol-name, .value-item {
+    color:#03265B;
+    font-weight: bold;
+}
+
+.net-item, .supply-item, .borrow-item, .cf-item, .max-cf-item{
+    border-radius:2px;
+}
+
+.net-item {
+    background-color: seagreen;
+    color:#fff;
+}
+
+.supply-item {
+    background-color:#72D98E;
+    color:seagreen;
+}
+
+.borrow-item {
+    background-color:#F7C37F;
+    color:#AF3779;
+
+}
+
+.cf-item {
+    background-color: #1976D2;
+    color:#fff;
+}
+
+
+/* Individual Position Table */
+/* .hidden-pos-table, .hidden-pos-table th, .hidden-pos-table td {
+    border: none;
+}
+.hidden-pos-table th {
+    background-color:#404448;
+    color:#fff;
+}
+
+
+.hidden-pos-table th img {
+    width:16px;
+}
+
+.hidden-pos-table td img {
+    width:24px;
+} */
+
+
+table {
+    border-collapse: collapse;
+    background-color: #F8F9FA;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+
+  }
+  
+  th {
+    font-size: 16px;
+    min-width: 120px;
+    color: #fff;
+    background-color: black;
+    padding: 5px 8px;
+    line-height: 25px;
+  }
+
+  th img {
+      position: relative;
+      width:20px;
+      top:5px;
+      left:5px;
+  }
+  
+  td {
+    border: solid 2px #fff;
+    font-size: 16px;
+    padding: 5px 8px;
+    line-height: 30px;
+  }
+
+  td img {
+    position: relative;
+    width:20px;
+    top:5px;
+    right:10px;
+  }
+
+  #defi-cell-header {
+      min-width: 180px;
+  }
+
+#aave-row img, #dydx-row img {
+    width:70px;
+    height:30px;
+}
+
+#mkr-vault-div {
+    position: relative;
+    top:-5px;
+    left:40px;
+}
+
+
+/* Hidden Balances div */
+#hidden-bal-div { 
+    margin-top:30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#hidden-bal-div > div {
+    padding:10px;
+    margin:10px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#hidden-bal-div > div > span {
+    padding:50px 5px;
+    min-width: 30px;
+    padding:4px 8px;
+}
+
+#hidden-bal-div div img {
+    width:32px;
+}

@@ -1,0 +1,23 @@
+.Toastify__toast  {
+    padding:0;
+}
+
+.toast-div {
+    width:auto;
+    height:auto;
+    font-family: Roboto;
+}
+
+.toast-title {
+    font-weight: lighter;
+    font-size:16px;
+    color:#03265B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.toast-title img {
+    width:40px;
+    margin:0px 10px;
+}

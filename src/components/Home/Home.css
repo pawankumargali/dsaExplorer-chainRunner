@@ -1,0 +1,50 @@
+#dsa-count-chart-div {
+    margin:2%;
+    padding:4%;
+    background-color: #ffffff;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#dsa-count-title, #dsa-recent-txn-title {
+    text-align: center;
+    color:#03265B;
+    font-weight: bold;
+}
+
+#dsa-total-count {
+    padding:0 1%;
+    position: absolute;
+    top:0px;
+    right:0px;
+    color:#fff;
+    background-image: linear-gradient(to right,#067, #047);
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+#latest-txn-div {
+    margin:2%;
+    padding:4%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#latest-txn-div div {
+
+    margin-top:20px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size:18px;
+    font-weight: bold;
+}
+
+#latest-txn-div table {
+    width:100%;
+}
+
+#latest-txn-div table .value-item a {
+    text-decoration: none;
+    color:inherit;
+}

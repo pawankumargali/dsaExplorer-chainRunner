@@ -1,0 +1,92 @@
+/* Owner info container */
+#owner-info-container {
+    margin:2%;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius:5px;
+    border-bottom: solid 1px #8B88B7;
+}
+
+/* Owner address */
+#owner-address {
+    padding:1%;
+    width:50%;
+    font-size: 20px;
+}
+
+#owner-address span {
+    font-weight: bold;
+    color:#8B88B7;
+    margin-right:12px;
+}
+
+#owner-address a {
+    /* font-weight: bold; */
+    text-decoration: none;
+    color:#03265B;
+
+}
+
+#owner-accounts-count-div { padding:10px; color:#8B88B7; font-size: 20px; } 
+
+#owner-accounts-count-div span {margin-right: 5px;}
+
+#accounts-count { background-image: linear-gradient(to right,#067, #047); color:#fff; padding:10px;}
+
+#select-dsa-heading {
+    width:100%;
+    padding:1%;
+    font-size: 20px;
+    font-weight: bold;
+    color:#03265B;
+}
+
+
+#view-all-btn {
+    cursor: pointer;
+    outline: none;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    min-width:100px;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#067, #047);
+    color:#fff;
+}
+
+#view-all-btn:hover {
+    transform: scale(1.1);
+}
+
+#dsa-addresses-container {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#dsa-addresses-container div {
+    cursor: pointer;
+    text-align: center;
+    margin:20px 8px;
+    padding:8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #F8F9FA;
+}
+
+#dsa-id { margin-right: 20px;}
+
+#dsa-cards-container {
+    margin-left:auto;
+    margin-right: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
