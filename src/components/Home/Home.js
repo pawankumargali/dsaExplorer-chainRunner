@@ -28,7 +28,7 @@ function Home({props, address, setAddress, tokenIcons}) {
 
     const initGlobalDsaCount = async () => {
         const count = await getGlobalDsaCount();
-        console.log(count);
+        // console.log(count);
         setGlobalDsaCount(count);
     }
 
@@ -106,7 +106,7 @@ function Home({props, address, setAddress, tokenIcons}) {
                         latestTxns.map((tx,index) =>
                             <tr key={index}>
                                 <td className="value-item">
-                                    <a href={`https://etherscan.io/address/${tx.txHash}`}
+                                    <a href={`https://etherscan.io/tx/${tx.txHash}`}
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     >

@@ -45,6 +45,7 @@ function DsaInfo({props, address, setAddress, tokenNames, tokenIcons, tokenPrice
                 }
             } 
         }
+
         setBalances(balanceData);
         setTotalBalanceInEth(totalEthBal);
         setBalancesReceived(true);
@@ -148,7 +149,7 @@ function DsaInfo({props, address, setAddress, tokenNames, tokenIcons, tokenPrice
             makerPos.totalDebtInEth=0;
         }
         setMakerPosition(makerPos);
-        console.log(makerPos);
+        // console.log(makerPos);
         setMakerReceived(true);
 
         const aavePos = await getAavePosition(dsaAddress);
@@ -205,18 +206,11 @@ function DsaInfo({props, address, setAddress, tokenNames, tokenIcons, tokenPrice
     
     useEffect(() => {
         initPositions();
-    }, [compoundReceived, makerReceived, aaveReceived, dydxReceived, currentVaultIdSet, totalSupply, totalBorrow]);
+    }, [compoundReceived, makerReceived, aaveReceived, dydxReceived, currentVaultIdSet, totalSupply, totalBorrow, toastCalled]);
 
     useEffect(() => {
         initOwners();  
-    }, [ownersReceived]);
-
-    // useEffect(() => {
-    //     initBalances();
-    //     initPositions();
-    //     initOwners();
-    // })
-
+    }, [ownersReceived, toastCalled]);
 
     return <Fragment>
                 <Header
@@ -235,7 +229,7 @@ function DsaInfo({props, address, setAddress, tokenNames, tokenIcons, tokenPrice
                                 {dsaAddress}
                             </a> 
                     </div>
-                    {balancesReceived && isBalancePercentagesSet && 
+                    {balancesReceived && isBalancePercentagesSet && !isNaN(totalBalanceInEth) &&
                         <DsaBalances 
                             tokenIcons={tokenIcons}
                             dsaAddress={dsaAddress}

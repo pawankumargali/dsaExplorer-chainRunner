@@ -13,6 +13,7 @@ import { FetchingDataToast } from '../core/CustomToast/CustomToast';
 toast.configure();
 
 function OwnerInfo({props, address, setAddress, tokenNames, tokenIcons, tokenPricesInEth, defiIcons}) {
+
     const [toastCalled, setToastCalled] = useState(false);
     
     const ownerAddress = props.match.params.address;
@@ -74,6 +75,13 @@ function OwnerInfo({props, address, setAddress, tokenNames, tokenIcons, tokenPri
         setSelectedAccounts(selAccs);
     }
 
+    const handleSelectAllAccounts = e => {
+        if(e.target.checked) {
+            toast(<FetchingDataToast/>, {position: toast.POSITION.BOTTOM_RIGHT, autoClose:3000});
+        }
+        setSelectAllAccounts(e.target.checked);
+    }
+
 
 
     return <Fragment>
@@ -103,7 +111,7 @@ function OwnerInfo({props, address, setAddress, tokenNames, tokenIcons, tokenPri
                                     control={
                                     <Switch
                                         checked={selectAllAccounts}
-                                        onChange={e =>  setSelectAllAccounts(e.target.checked)}
+                                        onChange={handleSelectAllAccounts}
                                         name="selectAllAccounts"
                                         color="primary"
                                     />
@@ -128,6 +136,7 @@ function OwnerInfo({props, address, setAddress, tokenNames, tokenIcons, tokenPri
                     {selectedAccounts.length!==0 &&
                         selectedAccounts.map(account =>
                             <DsaCard
+                                props={props}
                                 key={account.id}
                                 tokenNames={tokenNames}
                                 tokenIcons={tokenIcons}

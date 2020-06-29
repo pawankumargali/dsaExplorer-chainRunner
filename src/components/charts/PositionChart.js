@@ -44,7 +44,7 @@ function PositionChart({compound, maker, aave, dydx}) {
     const aaveNet = aave.totalSupplyInEth - aave.totalBorrowInEth;
     const dydxNet = dydx.totalSupplyInEth - dydx.totalBorrowInEth;
     const makerNet = maker.totalColInEth - maker.totalDebtInEth;
-    console.log(maker);
+    // console.log(maker);
 
     const data = {
 		labels: ["Net","Supply","Borrow"],

@@ -1,3 +1,9 @@
+## DSA Explorer   
+A DSA explorer to search and monitor balances, positions and owners of each individual InstaDapp DSA account.
+### [View Demo Video Here](https://www.loom.com/share/4458f42070f548828d9fd81de4a43971)
+<hr>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -13,7 +13,7 @@ function DsaPositions({tokenNames, tokenIcons, defiIcons, dsaAddress, dsaId, com
 
     const handleVaultIdSelect = e =>  {
         setCurrentVaultId(e.target.value);
-        console.log(currentVaultId);
+        // console.log(currentVaultId);
     }
 
     const runInit =  () => {

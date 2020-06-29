@@ -7,7 +7,7 @@ import BalanceChart from '../../charts/BalanceChart';
 function DsaBalances({tokenNames, tokenIcons, defiIcons, dsaAddress, dsaId, balances, balancePercentages, totalBalanceInEth, showBalanceChart}) {
     
     const [showAllBalances, setShowAllBalances] = useState(false);
-
+    
     /* CoinGecko doesn't return prices for snx, lend and susd
     lend:'aave', snx:'synthetix-network-token', susd:'susd',
     */

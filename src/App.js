@@ -46,8 +46,8 @@ function App() {
   };
   const tokenNames = {
     bat: 'Basic Attention',
-    // comp: 'Compound',
     dai: 'DAI Stable',
+    comp:'Compound',
     eth:'Ethereum',
     knc: 'Kyber Network',
     mkr:'MakerDAO',

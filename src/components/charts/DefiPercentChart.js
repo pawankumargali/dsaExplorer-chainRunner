@@ -26,7 +26,7 @@ const options = {
 };
 
 function DefiPercentChart({compound, aave, dydx, maker}) {
-    console.log(compound);
+    // console.log(compound);
 
     const compoundNet = Math.round((compound.totalSupplyInEth - compound.totalBorrowInEth)*10000)/10000;
     const aaveNet = aave.totalSupplyInEth - aave.totalBorrowInEth;

@@ -24,7 +24,7 @@ const options = {
 };
 
 function BalanceChart({balances}) {
-    console.log(balances);
+    // console.log(balances);
 
     const tokens=[];
     const balanceAmts=[];

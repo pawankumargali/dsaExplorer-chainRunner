@@ -4,7 +4,7 @@ import { getAuthorizedAddresses, getBalances, getCompoundPosition, getMakerPosit
 import DsaPositions from '../core/DsaPositions/DsaPositions';
 import DsaBalances from '../core/DsaBalances/DsaBalances';
 
-function DsaCard({tokenNames, tokenIcons, tokenPricesInEth, defiIcons, dsaAddress, dsaId}) {
+function DsaCard({props, tokenNames, tokenIcons, tokenPricesInEth, defiIcons, dsaAddress, dsaId}) {
 
     // Positions state variables and functions
     const [compoundPosition, setCompoundPositon] = useState(null);
@@ -75,7 +75,7 @@ function DsaCard({tokenNames, tokenIcons, tokenPricesInEth, defiIcons, dsaAddres
         
         const balanceData = await getBalances(dsaAddress);
         let totalEthBal=0;
-        console.log(balanceData);
+        // console.log(balanceData);
         /* CoinGecko doesn't return prices for snx, lend and susd
             lend:'aave', snx:'synthetix-network-token', susd:'susd',
         */
@@ -109,11 +109,12 @@ function DsaCard({tokenNames, tokenIcons, tokenPricesInEth, defiIcons, dsaAddres
                     >
                         {dsaAddress}
                     </a>
-                    <a  id="explore-dsa-link"
-                        href={`../dsa/${dsaAddress}`}
+                    <button  id="explore-dsa-btn"
+                        // href={`../dsa/${dsaAddress}`}
+                        onClick={() => props.history.push(`/dsa/${dsaAddress}`)}
                     >
                         Explore
-                    </a>
+                    </button>
                     <div id="dsa-id-overlay"># {dsaId}</div>
                 </div>
                 {compoundReceived && aaveReceived && dydxReceived && makerReceived &&

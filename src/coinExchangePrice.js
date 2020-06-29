@@ -4,8 +4,8 @@ const axios = require('axios');
 const CoinGeckoClient = new CoinGecko(CoinGecko.ORDER.COIN_NAME_ASC);
 
 const CoinGeckoAPIEndPoint = 'https://api.coingecko.com/api/v3/simple/price';
-/* CoinGecko doesn't return prices for snx, lend and susd
-
+/* CoinGecko doesn't return prices for snx, lend and susd 
+    comp:'compound'
 */
 const tokenIds = {
                     bat:'basic-attention-token', busd:'binance-usd', comp:'compound', dai:'dai', 
