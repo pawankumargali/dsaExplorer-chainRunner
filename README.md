@@ -1,6 +1,6 @@
 ## DSA Explorer   
 A DSA explorer to search and monitor balances, positions and owners of each individual InstaDapp DSA account.
-### [View Demo Video Here](https://www.loom.com/share/4458f42070f548828d9fd81de4a43971)
+### [View Demo Video Here](https://www.youtube.com/watch?v=N8svWZA0tcE)
 <hr>
 
 
